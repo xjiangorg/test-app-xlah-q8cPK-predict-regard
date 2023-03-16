@@ -25,7 +25,7 @@ spec:
         app.kubernetes.io/instance: test-component-texp
     spec:
       containers:
-      - image: quay.io/redhat-appstudio-qe/test-images:0d4ef19c190e42b49e87537d4274779a
+      - image: quay.io/redhat-appstudio-qe/test-images@sha256:420d57c26fdd49553c725cd03567f152809563acd489f03044d09c3441828d7b
         name: my-python
         ports:
         - containerPort: 8081
