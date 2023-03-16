@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: test-component-texp
+  namespace: build-e2e-dtxs-tenant
+spec:
+  replicas: 1
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/test-images@sha256:420d57c26fdd49553c725cd03567f152809563acd489f03044d09c3441828d7b
+        name: my-python
+        resources: {}
+status: {}
